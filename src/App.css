@@ -10,6 +10,17 @@
     grid-template-columns: 2fr 10fr;
 }
 
+/*18L - вынесли общие стили из модулей Profile и Dialog сюда*/
+
+.app-wrapper-content {
+    grid-area: c;
+    background-color: bisque;
+}
+
+.app-wrapper-content img {
+    width: 100%;
+}
+
 
 
 
