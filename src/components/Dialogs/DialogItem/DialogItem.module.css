@@ -1,0 +1,20 @@
+
+.dialog {
+    padding: 5px;
+}
+
+.dialog img {
+    width: 70px;
+    border-radius: 100px;
+
+}
+
+.dialog a {
+    color: black;
+    text-decoration: none;
+}
+
+.dialog a.activeLink {
+    color: chocolate;
+}
+
