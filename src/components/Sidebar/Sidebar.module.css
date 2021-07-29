@@ -1,3 +1,7 @@
 .item {
     color: white;
 }
+
+.item a:hover {
+    color: chocolate;
+}
