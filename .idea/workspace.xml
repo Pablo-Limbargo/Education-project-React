@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L26-27-28-29 - move data from components to BLL - state file, add Sidebar with friends">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L30-31 - onClick, createRef, on the way to add new posts, first steps">
+      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,17 +47,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Sidebar/Friend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar\Friend" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\ProfileInfo" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Dialogs\Message" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Dialogs\DialogItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
@@ -82,7 +83,8 @@
       <workItem from="1627317144090" duration="12340000" />
       <workItem from="1627406566763" duration="13120000" />
       <workItem from="1627490795934" duration="9974000" />
-      <workItem from="1627590843031" duration="3084000" />
+      <workItem from="1627590843031" duration="3290000" />
+      <workItem from="1627675003231" duration="4885000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627511592685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="L30-31 - onClick, createRef, on the way to add new posts, first steps">
+      <created>1627594649431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627594649431</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +137,7 @@
     <MESSAGE value="L17-18-19-20-21 - Route, NavLink, Dialog Page" />
     <MESSAGE value="L22-23-24-25 - Refactoring, Map" />
     <MESSAGE value="L26-27-28-29 - move data from components to BLL - state file, add Sidebar with friends" />
-    <option name="LAST_COMMIT_MESSAGE" value="L26-27-28-29 - move data from components to BLL - state file, add Sidebar with friends" />
+    <MESSAGE value="L30-31 - onClick, createRef, on the way to add new posts, first steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="L30-31 - onClick, createRef, on the way to add new posts, first steps" />
   </component>
 </project>

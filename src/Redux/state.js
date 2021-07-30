@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
     messagesPage: {
         dialogs: [
@@ -30,4 +32,26 @@ let state = {
 
 }
 
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likeCount: 0
+    }
+    state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
+}
+
+export let sendMessage = (sendMessage) => {
+    let newMessage = {
+        id: 4,
+        text: sendMessage
+    }
+    state.messagesPage.messages.push(newMessage);
+    rerenderEntireTree(state);
+}
+
 export default state;
+
+// L33 - создаем функции по добавлению постов и сообщений в диалоге,
+// прокидываем их через пропсы в нужные компоненты

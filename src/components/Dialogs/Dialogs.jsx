@@ -20,7 +20,9 @@ const Dialogs = (props) => {
 
     let sendMessage = () => {
         let text = newMessageElement.current.value;
-        alert(text)
+        props.sendMessage(text);
+        newMessageElement.current.value = '';
+        //L33 - строка для обнуления поля после ввода
     }
 
     return (
@@ -49,4 +51,5 @@ export default Dialogs;
 // 25L - мапим данные, вносим сокращения 'm = message, d = dialog' для удобства
 // 26L - переносим все данные (dialogs, messages, posts) на уровень выше, для начала в индекс
 // и через пропсы прокидываем в нужные компоненты
+// L33 - newMessageElement.current.value = ''; - строка для обнуления поля после ввода
 

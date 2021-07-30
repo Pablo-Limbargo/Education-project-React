@@ -14,7 +14,8 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
+        newPostElement.current.value = '';
     }
 
     return (
@@ -39,4 +40,4 @@ const MyPosts = (props) => {
 export default MyPosts;
 
 // 31L - добавляем онклик на кнопку, в нее передаем калбэк функцию. Создаем новую переменную с криэйтРэф,
-// добавляем ее в текстарею и функцию калбека из которой берем текущее значение
+// добавляем ее в текстарею и функцию калбек из которой берем текущее значение
