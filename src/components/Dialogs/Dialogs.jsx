@@ -20,9 +20,16 @@ const Dialogs = (props) => {
 
     let sendMessage = () => {
         let text = newMessageElement.current.value;
-        props.sendMessage(text);
+        //props.sendMessage(text);
+        props.dispatch({type: 'SEND-MESSAGE', newText: text})
         newMessageElement.current.value = '';
-        //L33 - строка для обнуления поля после ввода
+        //L33 - строка для обнуления поля после ввода - не актуально
+    }
+
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value;
+        //props.updateNewMessageText(text);
+        props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text})
     }
 
     return (
@@ -33,7 +40,7 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 {messageElements}
                 <div>
-                    <textarea ref={newMessageElement}></textarea>
+                    <textarea ref={newMessageElement} onChange={onMessageChange} value={props.newMessageText} />
                 </div>
                 <div>
                     <button onClick={sendMessage}>Send</button>
@@ -51,5 +58,6 @@ export default Dialogs;
 // 25L - мапим данные, вносим сокращения 'm = message, d = dialog' для удобства
 // 26L - переносим все данные (dialogs, messages, posts) на уровень выше, для начала в индекс
 // и через пропсы прокидываем в нужные компоненты
-// L33 - newMessageElement.current.value = ''; - строка для обнуления поля после ввода
+// L33 - newMessageElement.current.value = ''; - строка для обнуления поля после ввода - актуальна только
+// для этого урока, дальшее от нее избавляемся и зануляем только через обращение к state
 
