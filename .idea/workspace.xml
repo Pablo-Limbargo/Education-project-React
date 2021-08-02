@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L32-33 - add new posts and messages in Dialogs.&#10;Prepare to correct FLEX concept">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L34-35-36-37-38 - FLEX concept, store, bind dispatch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -86,7 +85,8 @@
       <workItem from="1627590843031" duration="3290000" />
       <workItem from="1627675003231" duration="5324000" />
       <workItem from="1627727321140" duration="7190000" />
-      <workItem from="1627758623469" duration="7676000" />
+      <workItem from="1627758623469" duration="8029000" />
+      <workItem from="1627922221677" duration="8312000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627680302045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="L34-35-36-37-38 - FLEX concept, store, bind dispatch">
+      <created>1627767678984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627767678984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +155,7 @@
     <MESSAGE value="L26-27-28-29 - move data from components to BLL - state file, add Sidebar with friends" />
     <MESSAGE value="L30-31 - onClick, createRef, on the way to add new posts, first steps" />
     <MESSAGE value="L32-33 - add new posts and messages in Dialogs.&#10;Prepare to correct FLEX concept" />
-    <option name="LAST_COMMIT_MESSAGE" value="L32-33 - add new posts and messages in Dialogs.&#10;Prepare to correct FLEX concept" />
+    <MESSAGE value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
   </component>
 </project>

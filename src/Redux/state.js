@@ -1,3 +1,8 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const SEND_MESSAGE = 'SEND-MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+
 let store = {
     _state: {
         messagesPage: {
@@ -13,7 +18,7 @@ let store = {
                 {id: 2, text: 'What`s new?'},
                 {id: 3, text: 'Hi man, I`m very well, thanks!'}
             ],
-            newMessageText: ''
+            newMessageText: 'test'
         },
         profilePage: {
             posts: [
@@ -71,7 +76,7 @@ let store = {
     // },
 
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
+        if (action.type === ADD_POST) {
             let newPost = {
                 id: 5,
                 message: this._state.profilePage.newPostText, // - запрашиваем значение из state
@@ -80,28 +85,35 @@ let store = {
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = ''; // - зануляем строку после ввода
             this._callSubscriber(this._state);
-        } else if (action.type === 'SEND-MESSAGE') {
+        } else if (action.type === SEND_MESSAGE) {
             let newMessage = {
                 id: 4,
                 text: this._state.messagesPage.newMessageText
             }
             this._state.messagesPage.messages.push(newMessage);
+            this._state.messagesPage.newMessageText = '';
             this._callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
+        } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
             this._state.messagesPage.newMessageText = action.newText;
             this._callSubscriber(this._state);
         }
     }
 }
 
+export const addPostActionCreator = () => ({type: ADD_POST});
+export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});
+
+export const sendMessageActionCreator = (text) => ({type: SEND_MESSAGE, newText: text});
+export const updateNewMessageTextActionCreator = (text) => ({type: UPDATE_NEW_MESSAGE_TEXT, newText: text});
+
 export default store;
-window.store = store;
 
 // 33L - создаем функции по добавлению постов и сообщений в диалоге,
 // прокидываем их через пропсы в нужные компоненты
 // 37L - переделываем файл state в store, ООП-шный объект
 // 38L - создаем метод dispatch и в него засовываем всю логику по другим методам
 // с обязательным указанием type, старые методы удаляем
+// 39L - экспортируем новые функции ActionCreator и выносим строки в константы, чтобы исключить опечатки при их вводе

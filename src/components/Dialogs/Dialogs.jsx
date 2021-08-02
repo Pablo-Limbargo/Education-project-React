@@ -2,34 +2,37 @@ import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import React from "react";
+import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../Redux/state";
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.messagesPage.dialogs.map(d => <DialogItem
+    let state = props.store.getState().messagesPage;
+
+    let dialogsElements = state.dialogs.map(d => <DialogItem
         id={d.id}
         name={d.name}
         avatar={d.avatar}
     />)
 
-    let messageElements = props.messagesPage.messages.map(m => <Message
+    let messageElements = state.messages.map(m => <Message
         id={m.id}
         text={m.text}
     />)
 
-    let newMessageElement = React.createRef();
+    // let newMessageElement = React.createRef();
 
-    let sendMessage = () => {
-        let text = newMessageElement.current.value;
+    let sendMessage = (e) => {
+        // let text = e.target.value;
         //props.sendMessage(text);
-        props.dispatch({type: 'SEND-MESSAGE', newText: text})
-        newMessageElement.current.value = '';
+        props.dispatch(sendMessageActionCreator())
+        // newMessageElement.current.value = '';
         //L33 - строка для обнуления поля после ввода - не актуально
     }
 
-    let onMessageChange = () => {
-        let text = newMessageElement.current.value;
+    let onMessageChange = (e) => {
+        let text = e.target.value;
         //props.updateNewMessageText(text);
-        props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text})
+        props.dispatch(updateNewMessageTextActionCreator(text));
     }
 
     return (
@@ -38,9 +41,14 @@ const Dialogs = (props) => {
                 {dialogsElements}
             </div>
             <div className={s.messages}>
-                {messageElements}
+                <div>{messageElements}</div>
                 <div>
-                    <textarea ref={newMessageElement} onChange={onMessageChange} value={props.newMessageText} />
+                    <textarea
+                        // placeholder="Enter your message"
+                        // ref={newMessageElement}
+                        onChange={onMessageChange}
+                        value={props.newMessageText}
+                    />
                 </div>
                 <div>
                     <button onClick={sendMessage}>Send</button>
@@ -58,6 +66,7 @@ export default Dialogs;
 // 25L - мапим данные, вносим сокращения 'm = message, d = dialog' для удобства
 // 26L - переносим все данные (dialogs, messages, posts) на уровень выше, для начала в индекс
 // и через пропсы прокидываем в нужные компоненты
-// L33 - newMessageElement.current.value = ''; - строка для обнуления поля после ввода - актуальна только
+// 33L - newMessageElement.current.value = ''; - строка для обнуления поля после ввода - актуальна только
 // для этого урока, дальшее от нее избавляемся и зануляем только через обращение к state
+
 
