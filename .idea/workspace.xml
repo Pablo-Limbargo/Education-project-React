@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L34-35-36-37-38 - FLEX concept, store, bind dispatch">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L39-40 - ActionCreator, refactoring Dialogs.jsx">
+      <change afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
@@ -86,7 +92,8 @@
       <workItem from="1627675003231" duration="5324000" />
       <workItem from="1627727321140" duration="7190000" />
       <workItem from="1627758623469" duration="8029000" />
-      <workItem from="1627922221677" duration="8312000" />
+      <workItem from="1627922221677" duration="8688000" />
+      <workItem from="1628009344242" duration="8912000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -130,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627767678984</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="L39-40 - ActionCreator, refactoring Dialogs.jsx">
+      <created>1627947710057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627947710057</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +170,7 @@
     <MESSAGE value="L30-31 - onClick, createRef, on the way to add new posts, first steps" />
     <MESSAGE value="L32-33 - add new posts and messages in Dialogs.&#10;Prepare to correct FLEX concept" />
     <MESSAGE value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
+    <MESSAGE value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
   </component>
 </project>
