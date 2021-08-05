@@ -2,37 +2,37 @@ import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import React from "react";
-import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../Redux/messagesReducer";
+// import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../Redux/messagesReducer";
 
 const Dialogs = (props) => {
 
-    let state = props.store.getState().messagesPage;
+    // let state = props.messagesPage;
 
-    let dialogsElements = state.dialogs.map(d => <DialogItem
+    let dialogsElements = props.dialogs.map(d => <DialogItem
         id={d.id}
         name={d.name}
         avatar={d.avatar}
     />)
 
-    let messageElements = state.messages.map(m => <Message
+    let messageElements = props.messages.map(m => <Message
         id={m.id}
         text={m.text}
     />)
 
     // let newMessageElement = React.createRef();
 
-    let sendMessage = (e) => {
+    let sendMessage = () => {
         // let text = e.target.value;
-        //props.sendMessage(text);
-        props.dispatch(sendMessageActionCreator())
+        props.sendMessage();
+        // props.dispatch(sendMessageActionCreator())
         // newMessageElement.current.value = '';
         //L33 - строка для обнуления поля после ввода - не актуально
     }
 
     let onMessageChange = (e) => {
         let text = e.target.value;
-        //props.updateNewMessageText(text);
-        props.dispatch(updateNewMessageTextActionCreator(text));
+        props.updateNewMessageText(text);
+        // props.dispatch(updateNewMessageTextActionCreator(text));
     }
 
     return (

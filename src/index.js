@@ -4,28 +4,29 @@ import './index.css';
 import App from './App';
 import store from "./Redux/reduxStore";
 import {BrowserRouter} from "react-router-dom";
+import StoreContext, {Provider} from "./StoreContext";
 
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = (props) => {
     ReactDOM.render(
         <BrowserRouter>
             <React.StrictMode>
-                <App
-                    state={state}
-                    dispatch={store.dispatch.bind(store)}
-                    store={store}
-                />
+                <Provider value={props.store}>
+                    <App />
+                </Provider>
             </React.StrictMode>
-        </BrowserRouter>,
+        </BrowserRouter>
+        ,
         document.getElementById('root')
     );
 }
 
 rerenderEntireTree(store.getState());
 
-store.subscribe( () => {
-    let state = store.getState();
-    rerenderEntireTree(state);
-})
+store.subscribe(() => {
+        let state = store.getState();
+        rerenderEntireTree(state);
+    }
+)
 
 
 // 29L - выносим данные в файл state, импортируем его тут и передаем в App и другие компоненты через пропсы

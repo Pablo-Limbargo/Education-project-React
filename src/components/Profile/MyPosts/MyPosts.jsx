@@ -1,7 +1,6 @@
 import s from './MyPosts.module.css';
 import Post from "./Post/Post";
 import React from "react";
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Redux/profileReducer";
 
 const MyPosts = (props) => {
 
@@ -13,19 +12,16 @@ const MyPosts = (props) => {
 
     // let newPostElement = React.createRef();
 
-    let addPost = () => {
+    let onAddPost = () => {
         //let text = newPostElement.current.value; - убираем эту строку, так как текст уже передан в state
-        //props.addPost(); // - убираем text
-        props.dispatch(addPostActionCreator());
+        props.addPost(); // - убираем text
+        // props.dispatch(addPostActionCreator());
         //props.updateNewPostText('') - убираем зачистку строки из UI в BLL
     }
 
     let onPostChange = (e) => {
         let text = e.target.value;
-        //props.updateNewPostText(text);
-        let action = updateNewPostTextActionCreator(text);
-        props.dispatch(action);
-
+        props.updateNewPostText(text);
     }
 
     return (
@@ -40,7 +36,7 @@ const MyPosts = (props) => {
                         value={props.newPostText} />
                 </div>
                 <div>
-                    <button onClick={addPost}>Add post</button>
+                    <button onClick={onAddPost}>Add post</button>
                 </div>
 
             </div>
@@ -56,3 +52,4 @@ export default MyPosts;
 // 31L - добавляем онклик на кнопку, в нее передаем калбэк функцию. Создаем новую переменную с криэйтРэф,
 // добавляем ее в текстарею и функцию калбек из которой берем текущее значение
 // 39L - выносим информацию из функций AddPost и onPostChange в state, создавая ActionCreator
+// 43L - создаем контейнерные компоненты вокруг основных, чтобы убрать из них всю связь со стейтом

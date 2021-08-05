@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L39-40 - ActionCreator, refactoring Dialogs.jsx">
-      <change afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L41-42 - Redux">
+      <change afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,17 +49,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Dialogs" />
+      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\MyPosts" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar\Friend" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\ProfileInfo" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Dialogs\Message" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
@@ -70,6 +67,23 @@
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Navbar" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Header" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,7 +107,9 @@
       <workItem from="1627727321140" duration="7190000" />
       <workItem from="1627758623469" duration="8029000" />
       <workItem from="1627922221677" duration="8688000" />
-      <workItem from="1628009344242" duration="8912000" />
+      <workItem from="1628009344242" duration="9156000" />
+      <workItem from="1628098237534" duration="8314000" />
+      <workItem from="1628182805958" duration="8360000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -144,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627947710057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="L41-42 - Redux">
+      <created>1628031282404</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628031282404</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +194,7 @@
     <MESSAGE value="L32-33 - add new posts and messages in Dialogs.&#10;Prepare to correct FLEX concept" />
     <MESSAGE value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
     <MESSAGE value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
+    <MESSAGE value="L41-42 - Redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="L41-42 - Redux" />
   </component>
 </project>
