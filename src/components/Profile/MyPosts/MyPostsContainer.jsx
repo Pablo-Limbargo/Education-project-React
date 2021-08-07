@@ -3,13 +3,14 @@ import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Red
 import MyPosts from "./MyPosts";
 import StoreContext from "../../../StoreContext";
 
-const MyPostsContainer = (props) => {
+const MyPostsContainer = () => {
 
     // let state = props.store.getState();
 
     return (
         <StoreContext.Consumer>
-            { (store) => {
+            {(store) => {
+
                 let state = store.getState();
 
                 let addPost = () => {
@@ -29,7 +30,7 @@ const MyPostsContainer = (props) => {
                     newPostText={state.profilePage.newPostText}
                 />
             }
-        }
+            }
         </StoreContext.Consumer>
     )
 }

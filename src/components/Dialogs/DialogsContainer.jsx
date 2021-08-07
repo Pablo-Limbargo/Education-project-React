@@ -3,13 +3,13 @@ import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../..
 import Dialogs from "./Dialogs";
 import StoreContext from "../../StoreContext";
 
-const DialogsContainer = (props) => {
+const DialogsContainer = () => {
 
     // let state = props.store.getState().messagesPage;
 
     return (
         <StoreContext.Consumer>
-            { (store) => {
+            { store => {
                 let state = store.getState().messagesPage;
 
                 let onSendMessage = () => {

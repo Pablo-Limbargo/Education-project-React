@@ -3,7 +3,7 @@ import Friend from "./Friend/Friend";
 
 const Sidebar = (props) => {
 
-    let friendsElements = props.state.friends.map(f => <Friend
+    let friendsElements = props.friends.map(f => <Friend
         id={f.id}
         name={f.name}
         avatar={f.avatar}

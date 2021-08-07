@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L41-42 - Redux">
-      <change afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="L43-44 - Сontainer Сomponent, Context API">
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,19 +50,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Navbar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Navbar" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Dialogs" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\MyPosts" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar\Friend" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Navbar" />
@@ -109,7 +111,9 @@
       <workItem from="1627922221677" duration="8688000" />
       <workItem from="1628009344242" duration="9156000" />
       <workItem from="1628098237534" duration="8314000" />
-      <workItem from="1628182805958" duration="8360000" />
+      <workItem from="1628182805958" duration="10751000" />
+      <workItem from="1628275678375" duration="7564000" />
+      <workItem from="1628364360984" duration="3210000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -167,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628031282404</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="L43-44 - Сontainer Сomponent, Context API">
+      <created>1628195975592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1628195975592</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +206,7 @@
     <MESSAGE value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
     <MESSAGE value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
     <MESSAGE value="L41-42 - Redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="L41-42 - Redux" />
+    <MESSAGE value="L43-44 - Сontainer Сomponent, Context API" />
+    <option name="LAST_COMMIT_MESSAGE" value="L43-44 - Сontainer Сomponent, Context API" />
   </component>
 </project>
