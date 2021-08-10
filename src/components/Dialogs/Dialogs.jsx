@@ -10,12 +10,14 @@ const Dialogs = (props) => {
 
     let dialogsElements = props.dialogs.map(d => <DialogItem
         id={d.id}
+        key={d.id}
         name={d.name}
         avatar={d.avatar}
     />)
 
     let messageElements = props.messages.map(m => <Message
         id={m.id}
+        key={m.id}
         text={m.text}
     />)
 
@@ -34,7 +36,6 @@ const Dialogs = (props) => {
         props.updateNewMessageText(text);
         // props.dispatch(updateNewMessageTextActionCreator(text));
     }
-
     return (
         <div className={s.dialogs}>
             <div className={s.dialogItems}>

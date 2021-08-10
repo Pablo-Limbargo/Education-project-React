@@ -1,7 +1,15 @@
 .item {
     color: white;
+    text-decoration: none;
 }
 
 .item a:hover {
     color: chocolate;
+}
+
+.link a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+
 }
