@@ -1,7 +1,7 @@
-import s from './Friend.module.css';
+import s from './FriendOnline.module.css';
 import {NavLink} from "react-router-dom";
 
-const Friend = (props) => {
+const FriendsOnline = (props) => {
 
     let path = '/dialogs/' + props.id;
 
@@ -15,4 +15,4 @@ const Friend = (props) => {
     )
 }
 
-export default Friend;
+export default FriendsOnline;

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="50-51L - REST API, User API">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="52-53L - Side Effect, extends React.Component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Friend/Friend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendOnline/FriendsOnline.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Friend/Friend.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendOnline/FriendOnline.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +117,8 @@
       <workItem from="1628444392541" duration="8075000" />
       <workItem from="1628535274687" duration="4058000" />
       <workItem from="1628621769860" duration="11089000" />
-      <workItem from="1628705816721" duration="6196000" />
+      <workItem from="1628705816721" duration="6320000" />
+      <workItem from="1628878007317" duration="3186000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -211,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628712058835</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="52-53L - Side Effect, extends React.Component">
+      <created>1628717396551</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1628717396551</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +260,7 @@
     <MESSAGE value="46-47L - modify Reducers" />
     <MESSAGE value="48-49L - refactoring, add Friends page" />
     <MESSAGE value="50-51L - REST API, User API" />
-    <option name="LAST_COMMIT_MESSAGE" value="50-51L - REST API, User API" />
+    <MESSAGE value="52-53L - Side Effect, extends React.Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="52-53L - Side Effect, extends React.Component" />
   </component>
 </project>

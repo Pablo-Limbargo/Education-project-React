@@ -10,6 +10,7 @@ import Settings from "./components/Settings/Settings";
 // import {updateNewMessageText} from "./Redux/store";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
+import Users from "./components/Users/Users";
 
 const App = (props) => {
     return (
@@ -29,10 +30,10 @@ const App = (props) => {
                     // profilePage={props.state.profilePage}
                     // dispatch={props.dispatch}
                 />}/>
+                <Route path='/users' render={() => <UsersContainer/>}/>
                 <Route path='/music' render={() => <Music/>}/>
                 <Route path='/news' render={() => <News/>}/>
                 <Route path='/settings' render={() => <Settings/>}/>
-                <Route path='/users' render={() => <UsersContainer/>}/>
             </div>
         </div>
     );
