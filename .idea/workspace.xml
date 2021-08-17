@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="56L - Refactoring Users Component">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/preloader.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.jsx" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="57-58L - Add Preloader, refactoring mapDispatchToProps">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +48,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Users" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Navbar" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Dialogs" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\MyPosts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Sidebar" />
@@ -119,7 +121,8 @@
       <workItem from="1628953379244" duration="5505000" />
       <workItem from="1629142327832" duration="3661000" />
       <workItem from="1629146037248" duration="2109000" />
-      <workItem from="1629148639614" duration="3004000" />
+      <workItem from="1629148639614" duration="3157000" />
+      <workItem from="1629222973063" duration="5471000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -247,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629146293090</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="57-58L - Add Preloader, refactoring mapDispatchToProps">
+      <created>1629151975516</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1629151975516</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +296,7 @@
     <MESSAGE value="Refactoring Navbar &amp; Sidebar pages, add FriendsOnline.jsx" />
     <MESSAGE value="54-55L - Life Cycle Methods, Pagination" />
     <MESSAGE value="56L - Refactoring Users Component" />
-    <option name="LAST_COMMIT_MESSAGE" value="56L - Refactoring Users Component" />
+    <MESSAGE value="57-58L - Add Preloader, refactoring mapDispatchToProps" />
+    <option name="LAST_COMMIT_MESSAGE" value="57-58L - Add Preloader, refactoring mapDispatchToProps" />
   </component>
 </project>
