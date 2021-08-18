@@ -2,8 +2,8 @@ import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 
 const ProfileInfo = (props) => {
-    if(!props.profile) {
-       return <Preloader/>
+    if (!props.profile) {
+        return <Preloader/>
     }
     return (
         <div>
@@ -13,7 +13,12 @@ const ProfileInfo = (props) => {
             </div>
             <div className={s.descriptionBlock}>
                 <img src={props.profile.photos.large}/>
-                ava + description
+                <h3>Full Name: {props.profile.fullName}</h3>
+                <h3>About me: {props.profile.aboutMe}</h3>
+                <div>VK: <a href='https://vk.com/dimych'>{props.profile.contacts.vk}</a></div>
+                <div>twitter: <a href='https://twitter.com/@sdf'>{props.profile.contacts.twitter}</a></div>
+                <div>instagram: <a href='https://instagram.com/sds'>{props.profile.contacts.instagram}</a></div>
+                <p>Job status: {props.profile.lookingForAJobDescription}</p>
             </div>
         </div>
 

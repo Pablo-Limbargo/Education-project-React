@@ -1,5 +1,5 @@
 import './App.css';
-import Header from "./components/Header/Header";
+//import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 //import Profile from "./components/Profile/Profile";
 // import Dialogs from "./components/Dialogs/Dialogs";
@@ -11,11 +11,12 @@ import Settings from "./components/Settings/Settings";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
+import HeaderContainer from "./components/Header/HeaderContainer";
 
 const App = (props) => {
     return (
         <div className='app-wrapper'>
-            <Header/>
+            <HeaderContainer/>
             <Navbar
                 // state={props.state}
             />
@@ -25,7 +26,7 @@ const App = (props) => {
                     // dispatch={props.dispatch}
                     // store={props.store}
                 />}/>
-                <Route path='/profile' render={() => <ProfileContainer
+                <Route path='/profile/:userId?' render={() => <ProfileContainer
                     // store={props.store}
                     // profilePage={props.state.profilePage}
                     // dispatch={props.dispatch}

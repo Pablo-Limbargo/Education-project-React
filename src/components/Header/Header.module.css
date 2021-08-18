@@ -5,5 +5,19 @@
 
 .header img {
     width: 150px;
+}
 
+.loginBlock {
+    float: right;
+    padding: 20px;
+}
+
+.loginBlock a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.loginBlock a:hover {
+    color: gold;
 }
