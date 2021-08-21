@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="60-61L - withRouter, Cookie, Login, auth/me">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="62L - follow-unfollow API">
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
@@ -122,7 +123,9 @@
       <workItem from="1629222973063" duration="5577000" />
       <workItem from="1629314117951" duration="8713000" />
       <workItem from="1629392972022" duration="1892000" />
-      <workItem from="1629410795717" duration="2222000" />
+      <workItem from="1629410795717" duration="2881000" />
+      <workItem from="1629472280526" duration="1301000" />
+      <workItem from="1629549807696" duration="6102000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -271,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629324048525</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="62L - follow-unfollow API">
+      <created>1629413097683</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1629413097683</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +323,7 @@
     <MESSAGE value="57-58L - Add Preloader, refactoring mapDispatchToProps" />
     <MESSAGE value="59L - Profile Page, AJAX, API" />
     <MESSAGE value="60-61L - withRouter, Cookie, Login, auth/me" />
-    <option name="LAST_COMMIT_MESSAGE" value="60-61L - withRouter, Cookie, Login, auth/me" />
+    <MESSAGE value="62L - follow-unfollow API" />
+    <option name="LAST_COMMIT_MESSAGE" value="62L - follow-unfollow API" />
   </component>
 </project>
