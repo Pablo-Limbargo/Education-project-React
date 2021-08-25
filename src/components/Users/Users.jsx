@@ -3,7 +3,6 @@ import userPhoto from "../../assets/images/ava-no-image.png";
 import React from "react";
 import {NavLink} from "react-router-dom";
 import axios from "axios";
-import {toggleFollowingProgress} from "../../Redux/usersReducer";
 
 let Users = (props) => {
 
@@ -45,7 +44,7 @@ let Users = (props) => {
                                     }
                                 })
                                     .then(response => {
-                                        if (response.data.resultCode == 0) {
+                                        if (response.data.resultCode === 0) {
                                             props.unfollow(u.id)
                                         }
                                         props.toggleFollowingProgress(false, u.id);
@@ -60,7 +59,7 @@ let Users = (props) => {
                                     }
                                 })
                                     .then(response => {
-                                        if (response.data.resultCode == 0) {
+                                        if (response.data.resultCode === 0) {
                                             props.follow(u.id)
                                         }
                                         props.toggleFollowingProgress(false, u.id);
