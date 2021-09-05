@@ -3,6 +3,8 @@ import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../..
 import Dialogs from "./Dialogs";
 // import StoreContext from "../../StoreContext";
 import {connect} from "react-redux";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
 
 // const DialogsContainer = () => {
 //
@@ -39,7 +41,6 @@ let mapStateToProps = (state) => {
         messages: state.messagesPage.messages,
         newMessageText: state.messagesPage.newMessageText,
         dialogs: state.messagesPage.dialogs,
-        isAuth: state.auth.isAuth
     }
 }
 
@@ -54,9 +55,14 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
-const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(Dialogs)
+// let AuthRedirectComponent = withAuthRedirect(Dialogs);
+//
+// const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(AuthRedirectComponent)
 
-export default DialogsContainer;
+export default compose(
+    connect(mapStateToProps, mapDispatchToProps),
+    withAuthRedirect
+)(Dialogs);
 
 // 24L - выносим все данные в отдельные объекты, готовим для использования MAP
 // 25L - мапим данные, вносим сокращения 'm = message, d = dialog' для удобства
