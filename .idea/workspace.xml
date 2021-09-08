@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="69-70L - High Order Component(hoc), compose">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="71L - setState, local state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +136,9 @@
       <workItem from="1630859067937" duration="609000" />
       <workItem from="1630867270800" duration="760000" />
       <workItem from="1630871443487" duration="3715000" />
-      <workItem from="1630959748239" duration="2634000" />
+      <workItem from="1630959748239" duration="2975000" />
+      <workItem from="1631039621637" duration="2153000" />
+      <workItem from="1631127443473" duration="5552000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -331,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630875200596</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="71L - setState, local state">
+      <created>1630962688051</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1630962688051</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +363,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="L32-33 - add new posts and messages in Dialogs.&#10;Prepare to correct FLEX concept" />
     <MESSAGE value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
     <MESSAGE value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
     <MESSAGE value="L41-42 - Redux" />
@@ -376,6 +387,7 @@
     <MESSAGE value="67L - redux-thunk (final)" />
     <MESSAGE value="68L - Redirect (login)" />
     <MESSAGE value="69-70L - High Order Component(hoc), compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="69-70L - High Order Component(hoc), compose" />
+    <MESSAGE value="71L - setState, local state" />
+    <option name="LAST_COMMIT_MESSAGE" value="71L - setState, local state" />
   </component>
 </project>

@@ -15,8 +15,8 @@ const ProfileInfo = (props) => {
             </div>
             <div className={s.descriptionBlock}>
                 <img alt='photo_large' src={props.profile.photos.large != null ? props.profile.photos.large : userPhoto}/>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 <h3>Full Name: {props.profile.fullName}</h3>
-                <ProfileStatus status={'Hello!'}/>
                 <h3>About me: {props.profile.aboutMe}</h3>
                 <div>VK: <a href='https://vk.com/dimych'>{props.profile.contacts.vk}</a></div>
                 <div>twitter: <a href='https://twitter.com/@sdf'>{props.profile.contacts.twitter}</a></div>
