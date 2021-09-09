@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="71L - setState, local state">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="73L - http put, local state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +135,8 @@
       <workItem from="1630871443487" duration="3715000" />
       <workItem from="1630959748239" duration="2975000" />
       <workItem from="1631039621637" duration="2153000" />
-      <workItem from="1631127443473" duration="5552000" />
+      <workItem from="1631127443473" duration="6857000" />
+      <workItem from="1631212532882" duration="2825000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -343,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630962688051</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="73L - http put, local state">
+      <created>1631133581285</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1631133581285</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="L34-35-36-37-38 - FLEX concept, store, bind dispatch" />
     <MESSAGE value="L39-40 - ActionCreator, refactoring Dialogs.jsx" />
     <MESSAGE value="L41-42 - Redux" />
     <MESSAGE value="L43-44 - Сontainer Сomponent, Context API" />
@@ -388,6 +392,7 @@
     <MESSAGE value="68L - Redirect (login)" />
     <MESSAGE value="69-70L - High Order Component(hoc), compose" />
     <MESSAGE value="71L - setState, local state" />
-    <option name="LAST_COMMIT_MESSAGE" value="71L - setState, local state" />
+    <MESSAGE value="73L - http put, local state" />
+    <option name="LAST_COMMIT_MESSAGE" value="73L - http put, local state" />
   </component>
 </project>
