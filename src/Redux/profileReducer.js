@@ -13,7 +13,7 @@ let initialState = {
     ],
     newPostText: '',
     profile: null,
-    status: '666'
+    status: ''
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -77,8 +77,8 @@ export const getUserProfile = (userId) => (dispatch) => {
 };
 
 export const getStatus = (userId) => (dispatch) => {
-    debugger
     profileAPI.getStatus(userId).then(response => {
+        debugger
         dispatch(setStatus(response.data))
     });
 };
