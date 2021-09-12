@@ -1,8 +1,34 @@
 import s from './MyPosts.module.css';
 import Post from "./Post/Post";
 import React from "react";
+import {Field, reduxForm} from "redux-form";
+
+const MyPostsForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit}>
+            <div>
+                <Field
+                    placeholder='Write your post'
+                    component='textarea'
+                    name='newPostBody'
+                />
+            </div>
+            <div>
+                <button>Add post</button>
+            </div>
+        </form>
+    )
+}
+
+const MyPostsReduxForm = reduxForm({
+    form: 'addPosts'
+})(MyPostsForm)
 
 const MyPosts = (props) => {
+
+    const onSubmit = (formData) => {
+        console.log(formData)
+    }
 
     let postElements = props.posts.map(p => <Post
         message={p.message}
@@ -11,36 +37,29 @@ const MyPosts = (props) => {
         likeCount={p.likeCount}
     />)
 
+        const addNewPost = (values) => {
+            props.addPost(values.newPostBody)
+        }
+
     // let newPostElement = React.createRef();
 
-    let onAddPost = () => {
-        //let text = newPostElement.current.value; - убираем эту строку, так как текст уже передан в state
-        props.addPost(); // - убираем text
-        // props.dispatch(addPostActionCreator());
-        //props.updateNewPostText('') - убираем зачистку строки из UI в BLL
-    }
-
-    let onPostChange = (e) => {
-        let text = e.target.value;
-        props.updateNewPostText(text);
-    }
+    // let onAddPost = () => {
+    //     //let text = newPostElement.current.value; - убираем эту строку, так как текст уже передан в state
+    //     props.addPost(); // - убираем text
+    //     // props.dispatch(addPostActionCreator());
+    //     //props.updateNewPostText('') - убираем зачистку строки из UI в BLL
+    // }
+    //
+    // let onPostChange = (e) => {
+    //     let text = e.target.value;
+    //     props.updateNewPostText(text);
+    // }
 
     return (
         <div className={s.postArea}>
             <h2>My posts</h2>
             <div>
-                <div>
-                    <textarea
-                        // ref={newPostElement}
-                        placeholder='Enter your text'
-                        onChange={onPostChange}
-                        value={props.newPostText}
-                    />
-                </div>
-                <div>
-                    <button onClick={onAddPost}>Add post</button>
-                </div>
-
+                <MyPostsReduxForm onSubmit={addNewPost}/>
             </div>
             <div className={s.posts}>
                 {postElements}

@@ -1,5 +1,5 @@
 const SEND_MESSAGE = 'SEND-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+// const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
 let initialState = {
         dialogs: [
@@ -13,8 +13,7 @@ let initialState = {
             {id: 1, text: 'Hi! How are you doing?'},
             {id: 2, text: 'What`s new?'},
             {id: 3, text: 'Hi man, I`m very well, thanks!'}
-        ],
-        newMessageText: ''
+        ]
 }
 
 export const messagesReducer = (state = initialState, action) => {
@@ -24,20 +23,19 @@ export const messagesReducer = (state = initialState, action) => {
             // let newMessage = {id: 4, text: state.newMessageText}
             return {
                 ...state,
-                messages: [...state.messages, {id: 4, text: state.newMessageText}],
-                newMessageText: ""
+                messages: [...state.messages, {id: 4, text: action.newMessageBody}],
             };
             // stateCopy.messages = [...state.messages];
             // stateCopy.messages.push(newMessage);
             // stateCopy.newMessageText = '';
             // return stateCopy;
 
-        case UPDATE_NEW_MESSAGE_TEXT:
-            return {
-                ...state,
-                newMessageText: action.newText
-            }
-        ;
+        // case UPDATE_NEW_MESSAGE_TEXT:
+        //     return {
+        //         ...state,
+        //         newMessageText: action.newText
+        //     }
+        // ;
             // stateCopy.newMessageText = action.newText;
             // return stateCopy;
 
@@ -59,7 +57,7 @@ export const messagesReducer = (state = initialState, action) => {
     // return state;
 }
 
-export const sendMessageActionCreator = () => ({type: SEND_MESSAGE});
-export const updateNewMessageTextActionCreator = (message) => ({type: UPDATE_NEW_MESSAGE_TEXT, newText: message});
+export const sendMessageActionCreator = (newMessageBody) => ({type: SEND_MESSAGE, newMessageBody});
+// export const updateNewMessageTextActionCreator = (message) => ({type: UPDATE_NEW_MESSAGE_TEXT, newText: message});
 
 export default messagesReducer;

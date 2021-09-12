@@ -3,6 +3,28 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import React from "react";
 import {Redirect} from "react-router-dom";
+import {Field, reduxForm} from "redux-form";
+
+const DialogForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit}>
+            <div>
+                <Field
+                    component='textarea'
+                    placeholder="Enter your message"
+                    name='newMessageBody'
+                />
+            </div>
+            <div>
+                <button>Send</button>
+            </div>
+        </form>
+    )
+}
+
+const DialogReduxForm = reduxForm({
+    form: 'dialogsAddMessageForm'
+})(DialogForm)
 
 const Dialogs = (props) => {
 
@@ -23,21 +45,25 @@ const Dialogs = (props) => {
 
     // let newMessageElement = React.createRef();
 
-    let sendMessage = () => {
-        // let text = e.target.value;
-        props.sendMessage();
-        // props.dispatch(sendMessageActionCreator())
-        // newMessageElement.current.value = '';
-        //L33 - строка для обнуления поля после ввода - не актуально
+    // let sendMessage = () => {
+    //     // let text = e.target.value;
+    //     props.sendMessage();
+    //     // props.dispatch(sendMessageActionCreator())
+    //     // newMessageElement.current.value = '';
+    //     //L33 - строка для обнуления поля после ввода - не актуально
+    // }
+    //
+    // let onMessageChange = (e) => {
+    //     let text = e.target.value;
+    //     props.updateNewMessageText(text);
+    //     // props.dispatch(updateNewMessageTextActionCreator(text));
+    // }
+
+    const addNewMessage = (values) => {
+        props.sendMessage(values.newMessageBody)
     }
 
-    let onMessageChange = (e) => {
-        let text = e.target.value;
-        props.updateNewMessageText(text);
-        // props.dispatch(updateNewMessageTextActionCreator(text));
-    }
-
-    if(!props.isAuth) return <Redirect to={'/login'} />;
+    if (!props.isAuth) return <Redirect to={'/login'}/>;
 
     return (
         <div className={s.dialogs}>
@@ -46,17 +72,7 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 <div>{messageElements}</div>
-                <div>
-                    <textarea
-                        placeholder="Enter your message"
-                        // ref={newMessageElement}
-                        onChange={onMessageChange}
-                        value={props.newMessageText}
-                    />
-                </div>
-                <div>
-                    <button onClick={sendMessage}>Send</button>
-                </div>
+                <DialogReduxForm onSubmit={addNewMessage}/>
             </div>
 
         </div>
