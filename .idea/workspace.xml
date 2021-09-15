@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="75L - redux-form, part1 (login)">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)">
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormControls.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/messagesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/common/FormControls" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -57,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components\common\FormControls" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Header" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Users" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Navbar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components" />
@@ -144,7 +146,8 @@
       <workItem from="1631212532882" duration="8725000" />
       <workItem from="1631290810903" duration="2404000" />
       <workItem from="1631382904714" duration="2735000" />
-      <workItem from="1631467879980" duration="10397000" />
+      <workItem from="1631467879980" duration="10559000" />
+      <workItem from="1631729881966" duration="5988000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -370,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631473090961</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)">
+      <created>1631484013695</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1631484013695</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +400,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="L43-44 - Сontainer Сomponent, Context API" />
     <MESSAGE value="Bug fixing, Context API" />
     <MESSAGE value="46L - connect, mapStateToProps, mapDispatchToProps" />
     <MESSAGE value="45L - connect, mapStateToProps, mapDispatchToProps" />
@@ -415,6 +424,7 @@
     <MESSAGE value="73L - http put, local state" />
     <MESSAGE value="74L - componentDidUpdate" />
     <MESSAGE value="75L - redux-form, part1 (login)" />
-    <option name="LAST_COMMIT_MESSAGE" value="75L - redux-form, part1 (login)" />
+    <MESSAGE value="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)" />
+    <option name="LAST_COMMIT_MESSAGE" value="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)" />
   </component>
 </project>
