@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)">
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormControls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormControls.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.js" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="77L - redux-form field validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,8 @@
       <workItem from="1631290810903" duration="2404000" />
       <workItem from="1631382904714" duration="2735000" />
       <workItem from="1631467879980" duration="10559000" />
-      <workItem from="1631729881966" duration="5988000" />
+      <workItem from="1631729881966" duration="6265000" />
+      <workItem from="1631818371983" duration="3984000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -380,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631484013695</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="77L - redux-form field validation">
+      <created>1631738178876</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1631738178877</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +407,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bug fixing, Context API" />
     <MESSAGE value="46L - connect, mapStateToProps, mapDispatchToProps" />
     <MESSAGE value="45L - connect, mapStateToProps, mapDispatchToProps" />
     <MESSAGE value="46-47L - modify Reducers" />
@@ -425,6 +431,7 @@
     <MESSAGE value="74L - componentDidUpdate" />
     <MESSAGE value="75L - redux-form, part1 (login)" />
     <MESSAGE value="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)" />
-    <option name="LAST_COMMIT_MESSAGE" value="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)" />
+    <MESSAGE value="77L - redux-form field validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="77L - redux-form field validation" />
   </component>
 </project>
