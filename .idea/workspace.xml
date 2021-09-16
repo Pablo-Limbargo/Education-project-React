@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="77L - redux-form field validation">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="78L - login &amp; logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormControls/FormControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormControls.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <workItem from="1631382904714" duration="2735000" />
       <workItem from="1631467879980" duration="10559000" />
       <workItem from="1631729881966" duration="6265000" />
-      <workItem from="1631818371983" duration="3984000" />
+      <workItem from="1631818371983" duration="7577000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -387,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631738178877</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="78L - login &amp; logout">
+      <created>1631822607532</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1631822607532</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +413,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="46L - connect, mapStateToProps, mapDispatchToProps" />
     <MESSAGE value="45L - connect, mapStateToProps, mapDispatchToProps" />
     <MESSAGE value="46-47L - modify Reducers" />
     <MESSAGE value="48-49L - refactoring, add Friends page" />
@@ -432,6 +437,7 @@
     <MESSAGE value="75L - redux-form, part1 (login)" />
     <MESSAGE value="76L - redux-form, part2 (refactoring Dialogs &amp; Posts)" />
     <MESSAGE value="77L - redux-form field validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="77L - redux-form field validation" />
+    <MESSAGE value="78L - login &amp; logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="78L - login &amp; logout" />
   </component>
 </project>
