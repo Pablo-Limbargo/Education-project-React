@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="79L - stopSubmit (redux-form)">
-      <change afterPath="$PROJECT_DIR$/src/Redux/appReducer.js" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="80L - initializing">
+      <change afterPath="$PROJECT_DIR$/src/Redux/userSelectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/appReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +149,7 @@
       <workItem from="1631467879980" duration="10559000" />
       <workItem from="1631729881966" duration="6265000" />
       <workItem from="1631818371983" duration="7690000" />
-      <workItem from="1632080387467" duration="4225000" />
+      <workItem from="1632080387467" duration="7093000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -404,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631827989695</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="80L - initializing">
+      <created>1632084680465</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1632084680465</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +430,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="46-47L - modify Reducers" />
     <MESSAGE value="48-49L - refactoring, add Friends page" />
     <MESSAGE value="50-51L - REST API, User API" />
     <MESSAGE value="52-53L - Side Effect, extends React.Component" />
@@ -449,6 +454,7 @@
     <MESSAGE value="77L - redux-form field validation" />
     <MESSAGE value="78L - login &amp; logout" />
     <MESSAGE value="79L - stopSubmit (redux-form)" />
-    <option name="LAST_COMMIT_MESSAGE" value="79L - stopSubmit (redux-form)" />
+    <MESSAGE value="80L - initializing" />
+    <option name="LAST_COMMIT_MESSAGE" value="80L - initializing" />
   </component>
 </project>
