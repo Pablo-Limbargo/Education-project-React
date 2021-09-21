@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="80L - initializing">
-      <change afterPath="$PROJECT_DIR$/src/Redux/userSelectors.js" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="81L - reselect (part 1)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/appReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/userSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/userSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +148,8 @@
       <workItem from="1631467879980" duration="10559000" />
       <workItem from="1631729881966" duration="6265000" />
       <workItem from="1631818371983" duration="7690000" />
-      <workItem from="1632080387467" duration="7093000" />
+      <workItem from="1632080387467" duration="7642000" />
+      <workItem from="1632245350743" duration="2616000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -410,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632084680465</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="81L - reselect (part 1)">
+      <created>1632087760032</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1632087760032</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +437,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="48-49L - refactoring, add Friends page" />
     <MESSAGE value="50-51L - REST API, User API" />
     <MESSAGE value="52-53L - Side Effect, extends React.Component" />
     <MESSAGE value="Refactoring Navbar &amp; Sidebar pages, add FriendsOnline.jsx" />
@@ -455,6 +461,7 @@
     <MESSAGE value="78L - login &amp; logout" />
     <MESSAGE value="79L - stopSubmit (redux-form)" />
     <MESSAGE value="80L - initializing" />
-    <option name="LAST_COMMIT_MESSAGE" value="80L - initializing" />
+    <MESSAGE value="81L - reselect (part 1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="81L - reselect (part 1)" />
   </component>
 </project>
