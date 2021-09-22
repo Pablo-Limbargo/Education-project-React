@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="81L - reselect (part 1)">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="82-83L - mapStateToProps, activate reselect (part 2-3)">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/userSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/userSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -58,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\ProfileInfo" />
       <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
       <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components\common\FormControls" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Header" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
-      <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components" />
@@ -149,7 +148,8 @@
       <workItem from="1631729881966" duration="6265000" />
       <workItem from="1631818371983" duration="7690000" />
       <workItem from="1632080387467" duration="7642000" />
-      <workItem from="1632245350743" duration="2616000" />
+      <workItem from="1632245350743" duration="3787000" />
+      <workItem from="1632336475694" duration="3022000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -417,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632087760032</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="82-83L - mapStateToProps, activate reselect (part 2-3)">
+      <created>1632257707445</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1632257707445</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="50-51L - REST API, User API" />
     <MESSAGE value="52-53L - Side Effect, extends React.Component" />
     <MESSAGE value="Refactoring Navbar &amp; Sidebar pages, add FriendsOnline.jsx" />
     <MESSAGE value="54-55L - Life Cycle Methods, Pagination" />
@@ -462,6 +468,7 @@
     <MESSAGE value="79L - stopSubmit (redux-form)" />
     <MESSAGE value="80L - initializing" />
     <MESSAGE value="81L - reselect (part 1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="81L - reselect (part 1)" />
+    <MESSAGE value="82-83L - mapStateToProps, activate reselect (part 2-3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="82-83L - mapStateToProps, activate reselect (part 2-3)" />
   </component>
 </project>
