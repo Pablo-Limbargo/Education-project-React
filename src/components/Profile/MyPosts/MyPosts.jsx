@@ -29,8 +29,8 @@ const MyPostsReduxForm = reduxForm({
     form: 'addPosts'
 })(MyPostsForm)
 
-const MyPosts = (props) => {
-
+const MyPosts = React.memo(props => {
+    console.log('RENDER')
     const onSubmit = (formData) => {
         console.log(formData)
     }
@@ -42,9 +42,9 @@ const MyPosts = (props) => {
         likeCount={p.likeCount}
     />)
 
-        const addNewPost = (values) => {
-            props.addPost(values.newPostBody)
-        }
+    const addNewPost = (values) => {
+        props.addPost(values.newPostBody)
+    }
 
     // let newPostElement = React.createRef();
 
@@ -71,7 +71,7 @@ const MyPosts = (props) => {
             </div>
         </div>
     )
-}
+});
 
 export default MyPosts;
 
