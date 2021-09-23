@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="85L - hook, useEffect. refactoring ProfileStatus">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
     </list>
@@ -148,7 +148,7 @@
       <workItem from="1632245350743" duration="3787000" />
       <workItem from="1632336475694" duration="3692000" />
       <workItem from="1632379405773" duration="1516000" />
-      <workItem from="1632423201678" duration="2584000" />
+      <workItem from="1632423201678" duration="3831000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -437,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632381118482</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo">
+      <created>1632426209126</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1632426209126</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +464,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="54-55L - Life Cycle Methods, Pagination" />
     <MESSAGE value="56L - Refactoring Users Component" />
     <MESSAGE value="57-58L - Add Preloader, refactoring mapDispatchToProps" />
     <MESSAGE value="59L - Profile Page, AJAX, API" />
@@ -482,6 +488,7 @@
     <MESSAGE value="82-83L - mapStateToProps, activate reselect (part 2-3)" />
     <MESSAGE value="84L - hook, useState. refactoring ProfileStatus" />
     <MESSAGE value="85L - hook, useEffect. refactoring ProfileStatus" />
-    <option name="LAST_COMMIT_MESSAGE" value="85L - hook, useEffect. refactoring ProfileStatus" />
+    <MESSAGE value="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo" />
+    <option name="LAST_COMMIT_MESSAGE" value="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo" />
   </component>
 </project>

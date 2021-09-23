@@ -35,7 +35,9 @@ const MyPosts = React.memo(props => {
         console.log(formData)
     }
 
-    let postElements = props.posts.map(p => <Post
+    let postElements = [...props.posts]
+        .reverse()
+        .map(p => <Post
         message={p.message}
         id={p.id}
         key={p.id}
