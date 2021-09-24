@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="88L - pure function">
+      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +47,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\ProfileInfo" />
       <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
+      <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components\Profile\ProfileInfo" />
       <recent name="E:\IT\WebDevelopment\React\education-project\social-net\src\components\common\FormControls" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Header" />
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\Redux" />
@@ -68,20 +70,79 @@
       <recent name="D:\IT\WebDevelopment\React\education-project\social-net\src\components\Navbar" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+  <component name="RunManager" selected="Jest.length of messages should not be decrement if id is incorrect">
+    <configuration name="length of messages should be decrement after deleting" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profileReducer.test.js" />
+      <test-names>
+        <test-name value="length of messages should be decrement after deleting" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="length of messages should not be decrement if id is incorrect" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profileReducer.test.js" />
+      <test-names>
+        <test-name value="length of messages should not be decrement if id is incorrect" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="length of posts should be incremented" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profileReducer.test.js" />
+      <test-names>
+        <test-name value="length of posts should be incremented" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="message of new post should be `this is test`" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profileReducer.test.js" />
+      <test-names>
+        <test-name value="message of new post should be `this is test`" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="message of new post should be correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profileReducer.test.js" />
+      <test-names>
+        <test-name value="message of new post should be correct" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.length of messages should not be decrement if id is incorrect" />
+        <item itemvalue="Jest.length of messages should be decrement after deleting" />
+        <item itemvalue="Jest.message of new post should be correct" />
+        <item itemvalue="Jest.message of new post should be `this is test`" />
+        <item itemvalue="Jest.length of posts should be incremented" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +209,8 @@
       <workItem from="1632245350743" duration="3787000" />
       <workItem from="1632336475694" duration="3692000" />
       <workItem from="1632379405773" duration="1516000" />
-      <workItem from="1632423201678" duration="3831000" />
+      <workItem from="1632423201678" duration="5612000" />
+      <workItem from="1632512782579" duration="4128000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -444,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632426209126</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="88L - pure function">
+      <created>1632427582211</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1632427582211</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="56L - Refactoring Users Component" />
     <MESSAGE value="57-58L - Add Preloader, refactoring mapDispatchToProps" />
     <MESSAGE value="59L - Profile Page, AJAX, API" />
     <MESSAGE value="60-61L - withRouter, Cookie, Login, auth/me" />
@@ -489,6 +557,7 @@
     <MESSAGE value="84L - hook, useState. refactoring ProfileStatus" />
     <MESSAGE value="85L - hook, useEffect. refactoring ProfileStatus" />
     <MESSAGE value="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo" />
-    <option name="LAST_COMMIT_MESSAGE" value="86-87L - VirtualDOM, shouldComponentUpdate, PureComponent, memo" />
+    <MESSAGE value="88L - pure function" />
+    <option name="LAST_COMMIT_MESSAGE" value="88L - pure function" />
   </component>
 </project>
