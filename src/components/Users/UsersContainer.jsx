@@ -9,44 +9,19 @@ import {
     getFollowingInProgress,
     getIsFetching,
     getPageSize,
-    getTotalUsersCount, getUsers, getUsersSuper
+    getTotalUsersCount, getUsers
 } from "../../Redux/userSelectors";
 
 
 class UsersContainer extends React.Component {
     componentDidMount() {
-
-        this.props.getUsers(this.props.currentPage, this.props.pageSize);
-
-        // this.props.toggleIsFetching(true);
-        //
-        // userAPI.requestUsers(this.props.currentPage, this.props.pageSize).then(data => {
-        //     this.props.toggleIsFetching(false);
-        //     this.props.setUsers(data.items)
-        //     this.props.setTotalUsersCount(data.totalCount)
-        // });
+        let {currentPage, pageSize} = this.props;
+        this.props.getUsers(currentPage, pageSize);
     }
 
-    // requestUsers = () => {
-    //     if (this.props.users.length === 0) {
-    //
-    //         axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-    //             this.props.setUsers(response.data.items)
-    //         });
-    //     }
-    // }
-
     onPageChange = (pageNumber) => {
-
-        this.props.getUsers(pageNumber, this.props.pageSize);
-
-        // this.props.setCurrentPage(pageNumber);
-        // this.props.toggleIsFetching(true);
-        //
-        // userAPI.requestUsers(pageNumber, this.props.pageSize).then(data => {
-        //     this.props.toggleIsFetching(false);
-        //     this.props.setUsers(data.items)
-        // });
+        let {pageSize} = this.props
+        this.props.getUsers(pageNumber, pageSize);
     }
 
     render() {
@@ -66,17 +41,6 @@ class UsersContainer extends React.Component {
     }
 }
 
-// let mapStateToProps = (state) => {
-//     return {
-//         users: state.usersPage.users,
-//         pageSize: state.usersPage.pageSize,
-//         totalUsersCount: state.usersPage.totalUsersCount,
-//         currentPage: state.usersPage.currentPage,
-//         isFetching: state.usersPage.isFetching,
-//         followingInProgress: state.usersPage.followingInProgress
-//     }
-// }
-
 let mapStateToProps = (state) => {
     return {
         users: getUsers(state),
@@ -88,40 +52,6 @@ let mapStateToProps = (state) => {
     }
 }
 
-// let withRedirect = withAuthRedirect(UsersContainer)
-//
-// // let mapDispatchToProps = (dispatch) =>
-// // {
-// //     return {
-// //         follow: (userId) => {
-// //             dispatch(followAC(userId))
-// //         },
-// //         unfollow: (userId) => {
-// //             dispatch(unfollowAC(userId))
-// //         },
-// //         setUsers: (users) => {
-// //             dispatch(setUsersAC(users))
-// //         },
-// //         setCurrentPage: (pageNumber) => {
-// //             dispatch(setCurrentPageAC(pageNumber))
-// //         },
-// //         setTotalUsersCount: (totalCount) => {
-// //             dispatch(setTotalUsersCountAC(totalCount))
-// //         },
-// //         toggleIsFetching: (isFeching) => {
-// //             dispatch(toggleIsFetchingAC(isFeching))
-// //         }
-// //     }
-// // }
-//
-// export default connect(mapStateToProps, {
-//     follow,
-//     unfollow,
-//     setCurrentPage,
-//     toggleFollowingProgress,
-//     requestUsers
-// })(withRedirect)
-
 export default compose(
     connect(mapStateToProps, {
         follow,
@@ -130,5 +60,4 @@ export default compose(
         toggleFollowingProgress,
         getUsers: requestUsers
     }),
-    // withAuthRedirect
-) (UsersContainer)
+)(UsersContainer)
