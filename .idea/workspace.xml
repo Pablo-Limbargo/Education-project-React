@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="90L - redux-ducks refactoring">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="91L - chrome extensions for react &amp; redux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validators/object-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/object-helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +213,8 @@
       <workItem from="1632512782579" duration="4826000" />
       <workItem from="1632559026020" duration="6920000" />
       <workItem from="1632594888912" duration="1227000" />
-      <workItem from="1632596142986" duration="4651000" />
+      <workItem from="1632596142986" duration="4911000" />
+      <workItem from="1632677277141" duration="3551000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -526,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632599057169</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="91L - chrome extensions for react &amp; redux">
+      <created>1632601224258</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1632601224258</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +558,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="60-61L - withRouter, Cookie, Login, auth/me" />
     <MESSAGE value="62L - follow-unfollow API" />
     <MESSAGE value="63-64L - DAL, axios.create, button disabled (follow\unfollow)" />
     <MESSAGE value="65-66L - redux-thunk (beginning)" />
@@ -571,6 +582,7 @@
     <MESSAGE value="88L - pure function" />
     <MESSAGE value="89L - testing, jest, tdd, profileReducer testing" />
     <MESSAGE value="90L - redux-ducks refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="90L - redux-ducks refactoring" />
+    <MESSAGE value="91L - chrome extensions for react &amp; redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="91L - chrome extensions for react &amp; redux" />
   </component>
 </project>
