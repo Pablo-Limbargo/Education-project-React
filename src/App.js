@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import {Route, withRouter} from "react-router-dom"
+import {BrowserRouter, Route, withRouter} from "react-router-dom"
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
@@ -9,11 +9,12 @@ import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
-import {Component} from "react";
-import {connect} from "react-redux";
+import React, {Component} from "react";
+import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./Redux/appReducer";
 import Preloader from "./components/common/Preloader/Preloader";
+import store from "./Redux/reduxStore";
 
 class App extends Component {
 
@@ -59,9 +60,19 @@ const mapStateToProps = (state) => ({
     initialized: state.app.initialized
 })
 
-export default compose(
+let AppContainer = compose(
     withRouter,
     connect(mapStateToProps, {initializeApp}))(App);
+
+const SocNetApp = (props) => {
+   return <BrowserRouter>
+        <Provider store={store}>
+            <AppContainer />
+        </Provider>
+    </BrowserRouter>
+}
+
+export default SocNetApp;
 
 // 19L - 'react-router-dom -save' - установка роутинга. Пишем роуты, обрамляем в браузер роутер
 // 26-27L - меняем component на render, чтобы можно было прокинуть пропсы
