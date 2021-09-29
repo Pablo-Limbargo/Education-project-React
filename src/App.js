@@ -4,9 +4,7 @@ import {BrowserRouter, Route, withRouter} from "react-router-dom"
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
-import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
 import React, {Component} from "react";
@@ -15,6 +13,11 @@ import {compose} from "redux";
 import {initializeApp} from "./Redux/appReducer";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./Redux/reduxStore";
+import {Suspense} from "react";
+import {withSuspense} from "./hoc/withSuspense";
+
+const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
+const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends Component {
 
@@ -35,16 +38,8 @@ class App extends Component {
                     // state={props.state}
                 />
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' render={() => <DialogsContainer
-                        // messagesPage={props.state.messagesPage}
-                        // dispatch={props.dispatch}
-                        // store={props.store}
-                    />}/>
-                    <Route path='/profile/:userId?' render={() => <ProfileContainer
-                        // store={props.store}
-                        // profilePage={props.state.profilePage}
-                        // dispatch={props.dispatch}
-                    />}/>
+                    <Route path='/dialogs' render={withSuspense(DialogsContainer)} />
+                    <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
                     <Route path='/users' render={() => <UsersContainer/>}/>
                     <Route path='/music' render={() => <Music/>}/>
                     <Route path='/news' render={() => <News/>}/>
@@ -65,9 +60,9 @@ let AppContainer = compose(
     connect(mapStateToProps, {initializeApp}))(App);
 
 const SocNetApp = (props) => {
-   return <BrowserRouter>
+    return <BrowserRouter>
         <Provider store={store}>
-            <AppContainer />
+            <AppContainer/>
         </Provider>
     </BrowserRouter>
 }
