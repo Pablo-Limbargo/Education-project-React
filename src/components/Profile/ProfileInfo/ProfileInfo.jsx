@@ -1,13 +1,19 @@
 import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import userPhoto from "../../../assets/images/ava-no-image.png";
-import ProfileStatus from "./ProfileStatus";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = ({profile, status, updateStatus}) => {
+const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
     if (!profile) {
         return <Preloader/>
     }
+
+    const onMainPhotoSelected = (e) => {
+        if (e.target.files.length) {
+           savePhoto(e.target.files[0]);
+        }
+    }
+
     return (
         <div>
             <div>
@@ -15,7 +21,8 @@ const ProfileInfo = ({profile, status, updateStatus}) => {
                 {/*     src='https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg'/>*/}
             </div>
             <div className={s.descriptionBlock}>
-                <img alt='photo_large' src={profile.photos.large != null ? profile.photos.large : userPhoto}/>
+                <img alt='photo_large' src={profile.photos.large || userPhoto} className={s.mainPhoto}/>
+                {isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
                 <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
                 <h3>Full Name: {profile.fullName}</h3>
                 <h3>About me: {profile.aboutMe}</h3>
