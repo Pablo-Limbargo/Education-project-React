@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pablo-Limbargo/Education-project-React/static/css/main.809199fb.chunk.css",
-    "main.js": "/Pablo-Limbargo/Education-project-React/static/js/main.dd1dfa3a.chunk.js",
-    "main.js.map": "/Pablo-Limbargo/Education-project-React/static/js/main.dd1dfa3a.chunk.js.map",
-    "runtime-main.js": "/Pablo-Limbargo/Education-project-React/static/js/runtime-main.29360ba0.js",
-    "runtime-main.js.map": "/Pablo-Limbargo/Education-project-React/static/js/runtime-main.29360ba0.js.map",
-    "static/js/2.aacf64da.chunk.js": "/Pablo-Limbargo/Education-project-React/static/js/2.aacf64da.chunk.js",
-    "static/js/2.aacf64da.chunk.js.map": "/Pablo-Limbargo/Education-project-React/static/js/2.aacf64da.chunk.js.map",
+    "main.js": "/Pablo-Limbargo/Education-project-React/static/js/main.31bc02c8.chunk.js",
+    "main.js.map": "/Pablo-Limbargo/Education-project-React/static/js/main.31bc02c8.chunk.js.map",
+    "runtime-main.js": "/Pablo-Limbargo/Education-project-React/static/js/runtime-main.71285304.js",
+    "runtime-main.js.map": "/Pablo-Limbargo/Education-project-React/static/js/runtime-main.71285304.js.map",
+    "static/js/2.c5f9a184.chunk.js": "/Pablo-Limbargo/Education-project-React/static/js/2.c5f9a184.chunk.js",
+    "static/js/2.c5f9a184.chunk.js.map": "/Pablo-Limbargo/Education-project-React/static/js/2.c5f9a184.chunk.js.map",
     "static/css/3.616d2146.chunk.css": "/Pablo-Limbargo/Education-project-React/static/css/3.616d2146.chunk.css",
-    "static/js/3.0d0334dc.chunk.js": "/Pablo-Limbargo/Education-project-React/static/js/3.0d0334dc.chunk.js",
-    "static/js/3.0d0334dc.chunk.js.map": "/Pablo-Limbargo/Education-project-React/static/js/3.0d0334dc.chunk.js.map",
+    "static/js/3.03f21fad.chunk.js": "/Pablo-Limbargo/Education-project-React/static/js/3.03f21fad.chunk.js",
+    "static/js/3.03f21fad.chunk.js.map": "/Pablo-Limbargo/Education-project-React/static/js/3.03f21fad.chunk.js.map",
     "static/css/4.d58c902b.chunk.css": "/Pablo-Limbargo/Education-project-React/static/css/4.d58c902b.chunk.css",
     "static/js/4.0f6caf87.chunk.js": "/Pablo-Limbargo/Education-project-React/static/js/4.0f6caf87.chunk.js",
     "static/js/4.0f6caf87.chunk.js.map": "/Pablo-Limbargo/Education-project-React/static/js/4.0f6caf87.chunk.js.map",
@@ -17,14 +17,14 @@
     "static/css/3.616d2146.chunk.css.map": "/Pablo-Limbargo/Education-project-React/static/css/3.616d2146.chunk.css.map",
     "static/css/4.d58c902b.chunk.css.map": "/Pablo-Limbargo/Education-project-React/static/css/4.d58c902b.chunk.css.map",
     "static/css/main.809199fb.chunk.css.map": "/Pablo-Limbargo/Education-project-React/static/css/main.809199fb.chunk.css.map",
-    "static/js/2.aacf64da.chunk.js.LICENSE.txt": "/Pablo-Limbargo/Education-project-React/static/js/2.aacf64da.chunk.js.LICENSE.txt",
+    "static/js/2.c5f9a184.chunk.js.LICENSE.txt": "/Pablo-Limbargo/Education-project-React/static/js/2.c5f9a184.chunk.js.LICENSE.txt",
     "static/media/ava-no-image.png": "/Pablo-Limbargo/Education-project-React/static/media/ava-no-image.6133d125.png",
     "static/media/preloader.b767aab4.svg": "/Pablo-Limbargo/Education-project-React/static/media/preloader.b767aab4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.29360ba0.js",
-    "static/js/2.aacf64da.chunk.js",
+    "static/js/runtime-main.71285304.js",
+    "static/js/2.c5f9a184.chunk.js",
     "static/css/main.809199fb.chunk.css",
-    "static/js/main.dd1dfa3a.chunk.js"
+    "static/js/main.31bc02c8.chunk.js"
   ]
 }
