@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="93L - paginator &#10;94L - React.lazy &amp; React.Suspense">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="96L - uploading avatar image, shouldComponentUpdate fixing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +215,8 @@
       <workItem from="1632677277141" duration="3551000" />
       <workItem from="1632856710497" duration="7847000" />
       <workItem from="1632923781504" duration="13796000" />
-      <workItem from="1632987519304" duration="10348000" />
+      <workItem from="1632987519304" duration="14242000" />
+      <workItem from="1633086428225" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="L17-18-19-20-21 - Route, NavLink, Dialog Page">
       <created>1627336851402</created>
@@ -558,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632954395533</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="96L - uploading avatar image, shouldComponentUpdate fixing">
+      <created>1633034741202</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1633034741202</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="65-66L - redux-thunk (beginning)" />
     <MESSAGE value="redux-thunk (in progress)" />
     <MESSAGE value="67L - redux-thunk (final)" />
     <MESSAGE value="68L - Redirect (login)" />
@@ -603,6 +605,7 @@
     <MESSAGE value="91L - chrome extensions for react &amp; redux" />
     <MESSAGE value="92L - component testing, ProfileStatus testing, react-test-renderer" />
     <MESSAGE value="93L - paginator &#10;94L - React.lazy &amp; React.Suspense" />
-    <option name="LAST_COMMIT_MESSAGE" value="93L - paginator &#10;94L - React.lazy &amp; React.Suspense" />
+    <MESSAGE value="96L - uploading avatar image, shouldComponentUpdate fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="96L - uploading avatar image, shouldComponentUpdate fixing" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import {BrowserRouter, Route, withRouter} from "react-router-dom"
+import {HashRouter, Route, withRouter} from "react-router-dom"
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
@@ -13,7 +13,6 @@ import {compose} from "redux";
 import {initializeApp} from "./Redux/appReducer";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./Redux/reduxStore";
-import {Suspense} from "react";
 import {withSuspense} from "./hoc/withSuspense";
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
@@ -38,7 +37,7 @@ class App extends Component {
                     // state={props.state}
                 />
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' render={withSuspense(DialogsContainer)} />
+                    <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
                     <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
                     <Route path='/users' render={() => <UsersContainer/>}/>
                     <Route path='/music' render={() => <Music/>}/>
@@ -60,11 +59,13 @@ let AppContainer = compose(
     connect(mapStateToProps, {initializeApp}))(App);
 
 const SocNetApp = (props) => {
-    return <BrowserRouter>
+    return <HashRouter
+        //basename={process.env.PUBLIC_URL}
+    >
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 
 export default SocNetApp;
