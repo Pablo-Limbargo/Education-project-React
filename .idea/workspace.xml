@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="95L - github pages, deploy">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" afterDir="false" />
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="97L - profile updating (part 1)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,14 +218,7 @@
       <workItem from="1632987519304" duration="14242000" />
       <workItem from="1633086428225" duration="10759000" />
       <workItem from="1633177709216" duration="257000" />
-      <workItem from="1633200748619" duration="3534000" />
-    </task>
-    <task id="LOCAL-00002" summary="L22-23-24-25 - Refactoring, Map">
-      <created>1627423869219</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1627423869219</updated>
+      <workItem from="1633200748619" duration="9593000" />
     </task>
     <task id="LOCAL-00003" summary="L26-27-28-29 - move data from components to BLL - state file, add Sidebar with friends">
       <created>1627511592685</created>
@@ -568,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633094424676</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="97L - profile updating (part 1)">
+      <created>1633204534134</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1633204534134</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="67L - redux-thunk (final)" />
     <MESSAGE value="68L - Redirect (login)" />
     <MESSAGE value="69-70L - High Order Component(hoc), compose" />
     <MESSAGE value="71L - setState, local state" />
@@ -613,6 +607,7 @@
     <MESSAGE value="93L - paginator &#10;94L - React.lazy &amp; React.Suspense" />
     <MESSAGE value="96L - uploading avatar image, shouldComponentUpdate fixing" />
     <MESSAGE value="95L - github pages, deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="95L - github pages, deploy" />
+    <MESSAGE value="97L - profile updating (part 1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="97L - profile updating (part 1)" />
   </component>
 </project>

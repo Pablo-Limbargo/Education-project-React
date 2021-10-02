@@ -20,7 +20,9 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
     }
 
     const onSubmit = (formData) => {
-        saveProfile(formData);
+        saveProfile(formData).then( () => {
+            setEditMode(false);
+        });
     }
 
     return (
@@ -35,15 +37,18 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
                 <div>
                     <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
                 </div>
-                { editMode
+                {editMode
                     ? <ProfileDataForm
+                        initialValues={profile}
                         profile={profile}
                         onSubmit={onSubmit}
                     />
                     : <ProfileData
                         profile={profile}
                         isOwner={isOwner}
-                        goToEditMode={ () => {setEditMode(true)}}
+                        goToEditMode={() => {
+                            setEditMode(true)
+                        }}
                     />}
 
             </div>
@@ -54,7 +59,9 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
 
 const ProfileData = ({profile, isOwner, goToEditMode}) => {
     return <div>
-        {isOwner && <div><button onClick={goToEditMode}>Edit info</button></div>}
+        {isOwner && <div>
+            <button onClick={goToEditMode}>Edit info</button>
+        </div>}
         <div>
             <h3>Full name: {profile.fullName}</h3>
         </div>
@@ -76,7 +83,6 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
         </div>
     </div>
 }
-
 
 
 const Contact = ({contactTitle, contactValue}) => {
