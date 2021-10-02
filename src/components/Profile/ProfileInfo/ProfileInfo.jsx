@@ -2,16 +2,25 @@ import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import userPhoto from "../../../assets/images/ava-no-image.png";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
+import {useState} from "react";
+import ProfileDataForm from "./ProfileDataForm";
 
-const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
+const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, saveProfile}) => {
+
+    const [editMode, setEditMode] = useState(false);
+
     if (!profile) {
         return <Preloader/>
     }
 
     const onMainPhotoSelected = (e) => {
         if (e.target.files.length) {
-           savePhoto(e.target.files[0]);
+            savePhoto(e.target.files[0]);
         }
+    }
+
+    const onSubmit = (formData) => {
+        saveProfile(formData);
     }
 
     return (
@@ -23,17 +32,55 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
             <div className={s.descriptionBlock}>
                 <img alt='photo_large' src={profile.photos.large || userPhoto} className={s.mainPhoto}/>
                 {isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
-                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
-                <h3>Full Name: {profile.fullName}</h3>
-                <h3>About me: {profile.aboutMe}</h3>
-                <div>VK: <a href='https://vk.com/dimych'>{profile.contacts.vk}</a></div>
-                <div>twitter: <a href='https://twitter.com/@sdf'>{profile.contacts.twitter}</a></div>
-                <div>instagram: <a href='https://instagram.com/sds'>{profile.contacts.instagram}</a></div>
-                <p>Job status: {profile.lookingForAJobDescription}</p>
+                <div>
+                    <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
+                </div>
+                { editMode
+                    ? <ProfileDataForm
+                        profile={profile}
+                        onSubmit={onSubmit}
+                    />
+                    : <ProfileData
+                        profile={profile}
+                        isOwner={isOwner}
+                        goToEditMode={ () => {setEditMode(true)}}
+                    />}
+
             </div>
         </div>
-
     )
+
+}
+
+const ProfileData = ({profile, isOwner, goToEditMode}) => {
+    return <div>
+        {isOwner && <div><button onClick={goToEditMode}>Edit info</button></div>}
+        <div>
+            <h3>Full name: {profile.fullName}</h3>
+        </div>
+        <div>
+            <b>Job status</b>: {profile.lookingForAJob ? 'yes' : 'no'}
+        </div>
+        {profile.lookingForAJob &&
+        <div>
+            <b>My professional skills</b>: {profile.lookingForAJobDescription}
+        </div>
+        }
+        <div>
+            <b>About me</b>: {profile.aboutMe}
+        </div>
+        <div>
+            <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
+            return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
+        })}
+        </div>
+    </div>
+}
+
+
+
+const Contact = ({contactTitle, contactValue}) => {
+    return <div className={s.contact}>{contactTitle}: {contactValue}</div>
 }
 
 export default ProfileInfo;
