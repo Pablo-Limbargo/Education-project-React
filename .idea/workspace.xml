@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="97L - profile updating (part 1)">
+    <list default="true" id="de1bfecc-62fb-45f5-9a59-e6081e19c564" name="Default Changelist" comment="97L - profile updating (part 2)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/tasks-solutions" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -218,14 +215,8 @@
       <workItem from="1632987519304" duration="14242000" />
       <workItem from="1633086428225" duration="10759000" />
       <workItem from="1633177709216" duration="257000" />
-      <workItem from="1633200748619" duration="9593000" />
-    </task>
-    <task id="LOCAL-00003" summary="L26-27-28-29 - move data from components to BLL - state file, add Sidebar with friends">
-      <created>1627511592685</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1627511592685</updated>
+      <workItem from="1633200748619" duration="9671000" />
+      <workItem from="1633253649258" duration="173000" />
     </task>
     <task id="LOCAL-00004" summary="L30-31 - onClick, createRef, on the way to add new posts, first steps">
       <created>1627594649431</created>
@@ -563,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633204534134</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="97L - profile updating (part 2)">
+      <created>1633213391821</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1633213391821</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="68L - Redirect (login)" />
     <MESSAGE value="69-70L - High Order Component(hoc), compose" />
     <MESSAGE value="71L - setState, local state" />
     <MESSAGE value="73L - http put, local state" />
@@ -608,6 +605,7 @@
     <MESSAGE value="96L - uploading avatar image, shouldComponentUpdate fixing" />
     <MESSAGE value="95L - github pages, deploy" />
     <MESSAGE value="97L - profile updating (part 1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="97L - profile updating (part 1)" />
+    <MESSAGE value="97L - profile updating (part 2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="97L - profile updating (part 2)" />
   </component>
 </project>
